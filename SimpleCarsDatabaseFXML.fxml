@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="496.0" prefWidth="707.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simplecarsdatabase.SimpleCarsDatabaseController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0" prefHeight="200.0" prefWidth="411.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+      <Label layoutX="44.0" layoutY="225.0" prefHeight="17.0" prefWidth="69.0" text="Car VIN:" />
+      <Label layoutX="42.0" layoutY="257.0" prefHeight="17.0" prefWidth="69.0" text="Car Make:" />
+      <Label layoutX="42.0" layoutY="294.0" prefHeight="17.0" prefWidth="69.0" text="Car Model:" />
+      <Label layoutX="42.0" layoutY="327.0" prefHeight="17.0" prefWidth="69.0" text="Car Color:" />
+      <Label layoutX="43.0" layoutY="362.0" prefHeight="17.0" prefWidth="69.0" text="Car Year:" />
+      <Label layoutX="41.0" layoutY="396.0" prefHeight="17.0" prefWidth="76.0" text="Car Mileage:" />
+      <TextField fx:id="carVIN" layoutX="145.0" layoutY="220.0" prefHeight="27.0" prefWidth="279.0" promptText="Enter the car's VIN" />
+      <TextField fx:id="carMake" layoutX="145.0" layoutY="252.0" prefHeight="27.0" prefWidth="279.0" promptText="Enter the car's make" />
+      <TextField fx:id="carModel" layoutX="145.0" layoutY="289.0" prefHeight="27.0" prefWidth="279.0" promptText="Enter the car's model" />
+      <TextField fx:id="carColor" layoutX="145.0" layoutY="322.0" prefHeight="27.0" prefWidth="279.0" promptText="Enter the car's color" />
+      <TextField fx:id="carYear" layoutX="145.0" layoutY="357.0" prefHeight="27.0" prefWidth="279.0" promptText="Enter the car's year" />
+      <TextField fx:id="carMileage" layoutX="145.0" layoutY="392.0" prefHeight="25.0" prefWidth="279.0" promptText="Enter the car's mileage" />
+      <Button fx:id="addButton" layoutX="145.0" layoutY="441.0" mnemonicParsing="false" onAction="#handleAddButton" text="Add" />
+      <Button fx:id="updateButton" layoutX="195.0" layoutY="441.0" mnemonicParsing="false" onAction="#handleUpdateButton" text="Update" />
+      <Button fx:id="deleteButton" layoutX="363.0" layoutY="441.0" mnemonicParsing="false" onAction="#handleDeleteButton" text="Delete" />
+    </children>
+</AnchorPane>
